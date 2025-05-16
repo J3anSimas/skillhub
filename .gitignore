@@ -27,6 +27,8 @@ tmp/
 
 # Project build
 main
+main.exe
+
 *templ.go
 
 # OS X generated file
