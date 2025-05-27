@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.6 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,6 +7,7 @@
     'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-orange-700: oklch(55.3% 0.195 38.402);
     --color-green-100: oklch(96.2% 0.044 156.743);
@@ -5398,6 +5399,9 @@
   .loading-xs {
     width: calc(var(--size-selector, 0.25rem) * 4);
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .max-w-sm {
     max-width: var(--container-sm);
   }
@@ -6020,6 +6024,9 @@
       }
     }
   }
+  .bg-base-300 {
+    background-color: var(--color-base-300);
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -6031,6 +6038,9 @@
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .divider-accent {
     &:before, &:after {
@@ -6209,6 +6219,9 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .menu-title {
     padding-inline: calc(0.25rem * 3);
